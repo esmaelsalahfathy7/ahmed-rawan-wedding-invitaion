@@ -23,13 +23,13 @@ export default function Timeline() {
   const timelineMilestones = [
     {
       src: "/far-look.png",
-      date: lang === "ar" ? "١٢ أغسطس ٢٠٢٢" : "August 12, 2022",
+      date: lang === "ar" ? "١٤ يوليو ٢٠٢٣" : "July 14, 2023",
       title: lang === "ar" ? "اللقاء الأول" : "First Sight",
       desc: lang === "ar" ? "التقت أعيننا وتغير شيء عميق بالداخل، أدركت حينها أن قلبي قد وجد موطنه." : "Our eyes met, and in that fleeting moment, something profound shifted. My heart had found its home."
     },
     {
       src: "/engagment.png",
-      date: lang === "ar" ? "٢٥ ديسمبر ٢٠٢٤" : "December 25, 2024",
+      date: lang === "ar" ? "٢٦ سبتمبر ٢٠٢٣" : "September 26, 2023",
       title: lang === "ar" ? "يوم الخطبة" : "Engagement Day",
       desc: lang === "ar" ? "تحت سماء مرصعة بالنجوم الشتوية، سؤال بسيط غيّر مجرى حياتنا ووعد قطعناه بدموع الفرح." : "Under a canopy of stars, a simple question changed everything. A sacred promise was made."
     },

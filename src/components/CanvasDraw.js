@@ -1,9 +1,12 @@
 "use client";
 import { useRef, useState, useEffect } from 'react';
+import { useLanguage } from "../context/LanguageContext";
 
 export default function CanvasDraw({ onSave, onClear }) {
+  const { t } = useLanguage();
   const canvasRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false);
+
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -90,8 +93,8 @@ export default function CanvasDraw({ onSave, onClear }) {
         onTouchEnd={stopDrawing}
       />
       <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
-        <button type="button" onClick={handleClear} className="btn-gold" style={{ padding: '0.5rem 1rem', fontSize: '0.8rem' }}>Clear</button>
-        <button type="button" onClick={handleSave} className="btn-gold" style={{ padding: '0.5rem 1rem', fontSize: '0.8rem' }}>Confirm Drawing</button>
+        <button type="button" onClick={handleClear} className="btn-gold" style={{ padding: '0.5rem 1rem', fontSize: '0.8rem' }}>{t('clear')}</button>
+        <button type="button" onClick={handleSave} className="btn-gold" style={{ padding: '0.5rem 1rem', fontSize: '0.8rem' }}>{t('confirmDrawing')}</button>
       </div>
     </div>
   );

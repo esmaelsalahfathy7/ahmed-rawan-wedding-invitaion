@@ -413,7 +413,7 @@ export default function EnvelopeExperience({ onComplete }) {
                           marginTop: "0.5rem"
                         }}
                       >
-                        بداية حكايتنا معكم
+                        {lang === 'ar' ? "بداية حكايتنا معكم" : "Start our story with you"}
                       </motion.button>
                     </motion.div>
                   )}

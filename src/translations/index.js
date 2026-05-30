@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     // Envelope
-    invited: "You are invited",
+    invited: "Ahmed and Rawan wedding invitation",
     names: "Ahmed & Rawan",
     date: "June 29, 2026",
     tapToOpen: "Tap to Open",
@@ -17,7 +17,7 @@ export const translations = {
     // Location
     whereHeartsMeet: "Where Hearts Meet",
     locationDesc: "Join us at Lavida Wedding Hall.",
-    address: "In front of the hospital, Mariouteya Pyramids, \n Saqqara Tourist Road, Abu Nomros, Giza Governorate",
+    address: "Mariouteya – Pyramids – Saqqara Tourist Road\n Opposite Shubramant Central Hospital",
     openInMaps: "Open in Maps",
 
     // Guest Messages
@@ -36,10 +36,10 @@ export const translations = {
     incorrectPassword: "Incorrect password",
     unlockMessages: "Unlock Messages",
     lockMessages: "Lock",
-    lockedStateMsg: "Only the groom can view these messages.",
+    lockedStateMsg: "Only the couple can view these messages.",
     next: "Next",
     prev: "Previous",
-    dashboard: "Groom Dashboard",
+    dashboard: "Couple's Dashboard",
     totalAttendees: "Total Attendees",
     attendingCount: "Attending",
     declinedCount: "Declined",
@@ -49,6 +49,8 @@ export const translations = {
     message: "Message",
     noResults: "No results found",
     all: "All",
+    clear: "Clear",
+    confirmDrawing: "Confirm Drawing",
 
     // RSVP
     thankYou: "Thank You",
@@ -89,36 +91,6 @@ export const translations = {
     welcomeTitle: "As we begin our forever, we would be honored to have you by our side",
     welcomeNames: "Ahmed & Rawan",
 
-    // Timeline
-    ourStory: "Our Love Story",
-    timelineEvents: [
-      {
-        title: "First Meeting",
-        date: "August 12, 2022",
-        description: "Our eyes met across a crowded cafe, and in that fleeting moment, something profound shifted. It wasn't just a glance; it felt like the quiet recognition of a soul I’d known before."
-      },
-      {
-        title: "The First Date",
-        date: "August 20, 2022",
-        description: "An evening filled with endless conversation, shared laughter, and a growing realization that this was the start of something beautiful."
-      },
-      {
-        title: "Engagement Day",
-        date: "December 25, 2024",
-        description: "Underneath a canopy of winter stars, a simple question changed everything. A promise was made, sealed with tears of joy."
-      },
-      {
-        title: "Ring Ceremony",
-        date: "February 14, 2025",
-        description: "Surrounded by our closest loved ones, we exchanged rings as a symbol of our unending commitment and love."
-      },
-      {
-        title: "Wedding Day",
-        date: "June 29, 2026",
-        description: "The day two paths become one journey. We cannot wait to celebrate this beautiful milestone with you."
-      }
-    ],
-
     // Gallery
     galleryTitle: "Our Memories",
     gallerySubtitle: "Captured Moments",
@@ -140,7 +112,7 @@ export const translations = {
   },
   ar: {
     // Envelope
-    invited: "نتشرف بدعوتكم",
+    invited: "دعوة فرح احمد وروان",
     names: "أحمد وروان",
     date: "٢٩ يونيو ٢٠٢٦",
     tapToOpen: "تفضل بالدخول",
@@ -148,15 +120,15 @@ export const translations = {
 
     // Countdown
     journeyBegins: "يومنا الموعود بعد",
-    days: "أيام",
-    hours: "ساعات",
-    minutes: "دقائق",
-    seconds: "ثواني",
+    days: "يوم",
+    hours: "ساعة",
+    minutes: "دقيقة",
+    seconds: "ثانية",
 
     // Location
     whereHeartsMeet: "حيث تتلاقى القلوب",
     locationDesc: "نسعد بتشريفكم لنا في قاعة افراح لافيدا.",
-    address: "امام مستشفى, المريوطية هرم,\n طريق سقارة السياحي، أبو النمرس، محافظة الجيزة",
+    address: `المريوطية – هرم – طريق سقارة السياحي أمام مستشفى شبرامنت المركزي`,
     openInMaps: "افتح في الخرائط",
 
     // Guest Messages
@@ -175,10 +147,10 @@ export const translations = {
     incorrectPassword: "كلمة المرور غير صحيحة",
     unlockMessages: "عرض الرسائل",
     lockMessages: "قفل",
-    lockedStateMsg: "فقط العريس يمكنه رؤية هذه الرسائل.",
+    lockedStateMsg: "فقط العرسان يمكنهم رؤية هذه الرسائل.",
     next: "التالي",
     prev: "السابق",
-    dashboard: "لوحة تحكم العريس",
+    dashboard: "لوحة تحكم العرسان",
     totalAttendees: "إجمالي الحضور",
     attendingCount: "حاضر",
     declinedCount: "معتذر",
@@ -188,6 +160,8 @@ export const translations = {
     message: "الرسالة",
     noResults: "لا توجد نتائج",
     all: "الكل",
+    clear: "مسح",
+    confirmDrawing: "تأكيد الرسم",
 
     // RSVP
     thankYou: "شكراً لك",
@@ -227,36 +201,6 @@ export const translations = {
     // Welcome Section
     welcomeTitle: "بينما نبدأ رحلتنا الأبدية معاً، يشرفنا أن تكونوا إلى جانبنا",
     welcomeNames: "أحمد وروان",
-
-    // Timeline
-    ourStory: "قصة حبنا",
-    timelineEvents: [
-      {
-        title: "اللقاء الأول",
-        date: "١٢ أغسطس ٢٠٢٢",
-        description: "التقت أعيننا في مقهى مزدحم، وفي تلك اللحظة العابرة تغير شيء عميق. لم تكن مجرد نظرة، بل كان شعوراً بأنني وجدت روحاً أعرفها من قبل."
-      },
-      {
-        title: "الموعد الأول",
-        date: "٢٠ أغسطس ٢٠٢٢",
-        description: "أمسية مليئة بالأحاديث التي لا تنتهي، والضحكات المشتركة، وإدراك متزايد بأن هذه كانت بداية لشيء جميل."
-      },
-      {
-        title: "يوم الخطبة",
-        date: "٢٥ ديسمبر ٢٠٢٤",
-        description: "تحت سماء مرصعة بالنجوم الشتوية، سؤال بسيط غيّر كل شيء. وعد قطعناه وتوجناه بدموع الفرح."
-      },
-      {
-        title: "عقد القران",
-        date: "١٤ فبراير ٢٠٢٥",
-        description: "محاطين بأحبائنا المقربين، تبادلنا الخواتم كرمز لالتزامنا وحبنا الأبدي."
-      },
-      {
-        title: "يوم الزفاف",
-        date: "٢٩ يونيو ٢٠٢٦",
-        description: "اليوم الذي يصبح فيه طريقان رحلة واحدة. لا نطيق الانتظار للاحتفال بهذا اليوم الجميل معكم."
-      }
-    ],
 
     // Gallery
     galleryTitle: "ذكرياتنا",
