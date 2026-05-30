@@ -13,7 +13,7 @@ export const metadata = {
     images: [
       {
         url: "/og-image.png",
-        width: 1200,
+        width: 800,
         height: 630,
         alt: "Ahmed & Rawan Wedding Invitation",
       },
