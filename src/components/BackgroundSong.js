@@ -14,7 +14,7 @@ export default function BackgroundSong() {
 
     // Attempt to autoplay
     audioRef.current.play().then(() => {
-      setIsPlaying(true);
+      setIsPlaying(false);
       setIsMuted(true);
       audioRef.current.muted = true;
     }).catch(error => {
