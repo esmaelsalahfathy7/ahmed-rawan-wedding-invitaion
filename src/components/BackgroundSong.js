@@ -13,15 +13,15 @@ export default function BackgroundSong() {
     audioRef.current.loop = true;
 
     // Attempt to autoplay
-    audioRef.current.play().then(() => {
-      setIsPlaying(false);
-      setIsMuted(true);
-      audioRef.current.muted = true;
-    }).catch(error => {
-      // Autoplay was prevented
-      console.log("Autoplay prevented. User interaction required.");
-      setIsPlaying(false);
-    });
+    // audioRef.current.play().then(() => {
+    //   setIsPlaying(false);
+    //   setIsMuted(true);
+    //   audioRef.current.muted = true;
+    // }).catch(error => {
+    //   // Autoplay was prevented
+    //   console.log("Autoplay prevented. User interaction required.");
+    //   setIsPlaying(false);
+    // });
 
     return () => {
       if (audioRef.current) audioRef.current.pause();
