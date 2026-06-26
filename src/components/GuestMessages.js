@@ -53,7 +53,7 @@ export default function GuestMessages() {
   const fetchMessages = async () => {
     const res = await getMessages();
     if (res.success) {
-      setMessages(res.data.slice(0, 8));
+      setMessages(res.data);
     }
   };
 
