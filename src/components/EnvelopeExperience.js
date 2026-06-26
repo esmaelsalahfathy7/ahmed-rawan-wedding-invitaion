@@ -2,6 +2,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function EnvelopeExperience({ onComplete }) {
   const { lang } = useLanguage();
@@ -40,7 +42,7 @@ export default function EnvelopeExperience({ onComplete }) {
           clearInterval(fadeOutInterval);
           setTimeout(() => {
             handleEnter();
-          }, 5000);
+          }, 2000);
         }
       }, 50); // Fades out over ~1 second
     }
@@ -410,10 +412,15 @@ export default function EnvelopeExperience({ onComplete }) {
                           fontSize: "0.85rem",
                           cursor: "pointer",
                           boxShadow: "0 5px 15px rgba(0,0,0,0.2)",
-                          marginTop: "0.5rem"
+                          marginTop: "0.5rem",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          gap: "0.5rem"
                         }}
                       >
                         {lang === 'ar' ? "بداية حكايتنا معكم" : "Start our story with you"}
+                        {lang === 'ar' ? <ArrowBackIcon /> : <ArrowForwardIcon />}
                       </motion.button>
                     </motion.div>
                   )}
