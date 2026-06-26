@@ -26,6 +26,7 @@ export const getMessages = async () => {
     querySnapshot.forEach((doc) => {
       messages.push({ id: doc.id, ...doc.data() });
     });
+    messages.length = 8;
     return { success: true, data: messages };
   } catch (e) {
     console.error("Error fetching messages: ", e);
