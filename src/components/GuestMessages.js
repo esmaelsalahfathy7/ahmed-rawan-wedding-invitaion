@@ -53,7 +53,7 @@ export default function GuestMessages() {
   const fetchMessages = async () => {
     const res = await getMessages();
     if (res.success) {
-      setMessages(res.data);
+      setMessages(res.data.slice(0, 8));
     }
   };
 
@@ -116,11 +116,11 @@ export default function GuestMessages() {
       transition={{ duration: 1 }}
       style={{ position: 'relative' }}
     >
-      <div style={{ 
-        position: 'absolute', 
-        top: '2rem', 
-        right: lang === 'ar' ? 'auto' : '2rem', 
-        left: lang === 'ar' ? '2rem' : 'auto', 
+      <div style={{
+        position: 'absolute',
+        top: '2rem',
+        right: lang === 'ar' ? 'auto' : '2rem',
+        left: lang === 'ar' ? '2rem' : 'auto',
         zIndex: 10,
         display: 'flex',
         gap: '0.5rem'
